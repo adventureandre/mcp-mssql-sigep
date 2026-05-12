@@ -39,7 +39,7 @@ function jsonTxt(obj) {
 
 server.tool(
   "listDatabases",
-  "Lista todos os bancos de dados disponiveis no servidor MSSQL",
+  "Lista todos os bancos de dados disponiveis no servidor MSSQL ",
   {},
   async () => {
     let pool = null;
@@ -59,7 +59,7 @@ server.tool(
     } finally {
       if (pool) await pool.close();
     }
-  }
+  },
 );
 
 // ========================================
@@ -108,7 +108,7 @@ server.tool(
     } finally {
       if (pool) await pool.close();
     }
-  }
+  },
 );
 
 // ========================================
@@ -166,7 +166,7 @@ server.tool(
     } finally {
       if (pool) await pool.close();
     }
-  }
+  },
 );
 
 // ========================================
